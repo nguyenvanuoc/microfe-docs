@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+    
+
+    <div class="app-page">
+        {% include header.html %}
+        <div class="main">
+            <nav class="site-nav">
+            
+                <ul class="menus">
+                    
+                    
+                    <li>
+                        <a class="page-link" href="/">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a class="page-link" href="/document/">Tài liệu</a>
+                    </li>
+                    <li>
+                        <a class="page-link" href="/setup/">Hướng dẫn Cài đặt </a>
+                    </li>
+                    <li>
+                        <a class="page-link" href="/icon/">Bộ Icon</a>
+                    </li>
+                    <li>
+                        <a class="page-link" href="/microfe-dev/">Các vấn đề của MicroFE</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="content">
+                <div class="article" style="min-height: calc(100vh - 200px);">
+                    {{ content }}
+                </div>
+                {% include footer.html %}
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var pathname= window.location.pathname;
+        document.querySelectorAll('.menus a').forEach(
+            elem => {
+                if(elem.getAttribute('href')===pathname){
+                    elem.classList.add('current');
+                }
+                console.log(elem.getAttribute('href'))
+            }
+            
+        );
+    </script>
+
+</body>
+
+</html>
