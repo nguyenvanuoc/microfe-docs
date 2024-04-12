@@ -42,10 +42,11 @@
     </div>
 
     <script>
-        var pathname= window.location.pathname;
+        var url= window.location.href;
         document.querySelectorAll('.menus a').forEach(
             elem => {
-                if(elem.getAttribute('href')===pathname){
+                console.log(elem.getAttribute('href'));
+                if(elem.getAttribute('href')=== url){
                     elem.classList.add('current');
                 }
                 console.log(elem.getAttribute('href'))
