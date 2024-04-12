@@ -31,7 +31,7 @@ author: Uoc Nguyen
 
 
 # Build settings
-theme: document
+# theme: document
 plugins:
   - jekyll-feed
 
