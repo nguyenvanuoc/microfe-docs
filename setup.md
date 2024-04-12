@@ -14,11 +14,11 @@ Trong những năm trở lại đây, việc áp dụng những concepts từ Mi
 
 #### Monolithic Frontends
 
-![Monolithic Frontends](/images/mono.png)
+![Monolithic Frontends]({{site.url}}/images/mono.png)
 
 #### Micro Frontends
 
-![Micro Frontends](/images/micro.png)
+![Micro Frontends]({{site.url}}/images/micro.png)
 
 ### Phương pháp để áp dụng Micro Frontends
 
@@ -42,7 +42,7 @@ Webpack 5 and Module Federation, [piral](https://piral.io/), [luigi](https://lui
 Code demo có tại repo sau: [https://github.com/nguyenvanuoc/micro-frontends-demo](https://github.com/nguyenvanuoc/micro-frontends-demo)
 
 
-![Micro](/images/micro-fe-app.jpg)
+![Micro]({{site.url}}/images/micro-fe-app.jpg)
 
 Từ hình mô tả trên chúng ta có thể thấy rằng, ứng dụng email client của chúng ta sẽ có thể được phát triển bởi 2 team cho 2 chức năng là __mailbox__ và __calendar__. Trong đó, team calendar có thể phát triển thêm một widget để có thể nhúng vào page của __mailbox__. Việc tạo ra các widget có thể được thực hiện thông qua Custom Elements.
 
@@ -608,7 +608,7 @@ Sau đó truy cập vào các địa chỉ sau: [http://localhost:5200/](http://
 
 Dưới đây là kết quả có được. Chúng ta có thể chạy standalone cho từng micro apps hoặc chạy chính từ shell app.
 
-![micro](/images/micro-frontends.gif)
+![micro]({{site.url}}/images/micro-frontends.gif)
 
 #### Lời kết
 

@@ -50,7 +50,7 @@ Tổ hợp thư viện và công cụ phục vụ triển khai ứng dụng Fron
 
 ### Cấu trúc thư mục 
 
-![cấu trúc](/images/ct.png)
+![cấu trúc]({{site.url}}/images/ct.png)
 
 - **Projects**: chứa các apps và shared component
     - **Apps** : Thư mục chứa các microapps
