@@ -20,12 +20,11 @@
 
 title: VNPT-eGov
 email: uocnv@vnpt.vn
-description: >- # this means to ignore newlines until "baseurl:"
-  Hướng dẫn VNPT-eGovUI 
+description: Hướng dẫn VNPT-eGovUI 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "vnptit.vn" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: nguyenvanuoc
+github_username:  nguyenvanuoc
 author: Uoc Nguyen
 
 
