@@ -211,3 +211,36 @@ Với đường dẫn `https://microfontend-dev.vercel.app/` là ứng tên mi�
 Nếu triển khai trên cùng 1 hệ server
 Copy danh sách apps trong file start vào thư mục gốc, đồng thời các app con vào trong cùng 1 thư mục
 
+
+#### Cấu hình server nginx 
+
+Sau khi cài đặt, bạn cần cấu hình Nginx để phục vụ các tệp tĩnh từ thư mục xây dựng của các ứng dụng Angular. Dưới đây là một cấu hình ví dụ:
+
+
+```bash
+server {
+    listen 80;
+    server_name your_domain.com;
+
+    root /path/to/your/angular/start;
+
+    location /microapp1/ {
+        alias /path/to/your/angular/apps/microapp1/;
+        try_files $uri $uri/ /microapp1/index.html;
+    }
+
+    location /microapp2/ {
+        alias /path/to/your/angular/apps/microapp2/;
+        try_files $uri $uri/ /microapp2/index.html;
+    }
+
+    location /microapp3/ {
+        alias /path/to/your/angular/apps/microapp3/;
+        try_files $uri $uri/ /microapp3/index.html;
+    }
+
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+}
+```
